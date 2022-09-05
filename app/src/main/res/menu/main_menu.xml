@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Read Quran">
+        <menu>
+            <item
+                android:id="@+id/read"
+                android:title="Read in Arabic"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Urdu Translation">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fatehMuhammad"
+                    android:title="By Fateh Muhammad Jala" />
+                <item
+                    android:id="@+id/mehmoodUlHassan"
+                    android:title="By Mehmood Ul Hassan" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="English Translation">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drMohsin"
+                    android:title="By Dr Mohsin Khan" />
+                <item
+                    android:id="@+id/muftiTaqi"
+                    android:title="By Mufti Taqi Usmani" />
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>
