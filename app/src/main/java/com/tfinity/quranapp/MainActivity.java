@@ -31,5 +31,8 @@ public class MainActivity extends AppCompatActivity {
         toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        DBHelper db=new DBHelper(MainActivity.this);
+        db.getdata();
     }
 }
