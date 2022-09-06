@@ -7,8 +7,11 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,5 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
         DBHelper db=new DBHelper(MainActivity.this);
         db.getdata();
+
+        QDH qdh=new QDH();
+        ArrayList<ParaModel> ListViewArray =  qdh.getParaName();
+        ParaListAdapter adapter=new ParaListAdapter(MainActivity.this,ListViewArray);
+        ListView paraListView=findViewById(R.id.paraList);
+        paraListView.setAdapter(adapter);
     }
 }
