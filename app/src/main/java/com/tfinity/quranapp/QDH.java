@@ -574,15 +574,15 @@ public class QDH {
         return list;
     }
 
-    public ArrayList<ParaModel> getParaName() {
-        ArrayList<ParaModel> list = new ArrayList<ParaModel>();
-        for (int index = 0; index < ParahName.length; ++index){
-
-            list.add(new ParaModel(ParahName[index],index+1));
-        }
-
-        return list;
-    }
+//    public ArrayList<DataModel> getParaName() {
+//        ArrayList<DataModel> list = new ArrayList<DataModel>();
+//        for (int index = 0; index < ParahName.length; ++index){
+//
+//            list.add(new DataModel(ParahName[index],index+1));
+//        }
+//
+//        return list;
+//    }
 
     public int getSurahStart(int surahNumber) {
         return SSP[surahNumber];

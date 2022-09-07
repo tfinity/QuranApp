@@ -12,9 +12,9 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class ParaListAdapter extends ArrayAdapter<ParaModel> {
+public class DataAdapter extends ArrayAdapter<DataModel> {
     Context context;
-    public ParaListAdapter(@NonNull Context context, ArrayList<ParaModel> ListViewArray) {
+    public DataAdapter(@NonNull Context context, ArrayList<DataModel> ListViewArray) {
         super(context, R.layout.paralistview, ListViewArray);
         this.context=context;
     }
@@ -22,7 +22,7 @@ public class ParaListAdapter extends ArrayAdapter<ParaModel> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        ParaModel m=getItem(position);
+        DataModel m=getItem(position);
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.paralistview,parent,false);
         TextView name=convertView.findViewById(R.id.ParaName);
         name.setText(m.getName());
