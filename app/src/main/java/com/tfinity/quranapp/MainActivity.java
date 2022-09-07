@@ -38,10 +38,5 @@ public class MainActivity extends AppCompatActivity {
         DBHelper db=new DBHelper(MainActivity.this);
         db.getdata();
 
-        QDH qdh=new QDH();
-        ArrayList<ParaModel> ListViewArray =  qdh.getParaName();
-        ParaListAdapter adapter=new ParaListAdapter(MainActivity.this,ListViewArray);
-        ListView paraListView=findViewById(R.id.paraList);
-        paraListView.setAdapter(adapter);
     }
 }
