@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".Settings">
 
     <Button
@@ -11,7 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
+        android:background="#504545"
         android:text="Save Settings"
+        android:textColor="#FDFDFD"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +27,7 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="20dp"
         android:text="Urdu Translation: "
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,6 +39,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginTop="24dp"
         android:text="Fateh Muhammad Jala"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/urduTranslationLable" />
@@ -46,6 +51,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginTop="22dp"
         android:text="Mehmood  Ul Hassan"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fateMuhammadLable" />
@@ -75,6 +81,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="25dp"
         android:text="English Translation"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/noUrduLable" />
@@ -85,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="No Urdu Translation"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/mehmoodhassanLable"
         app:layout_constraintTop_toBottomOf="@+id/mehmoodhassanLable" />
@@ -105,6 +113,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginTop="25dp"
         android:text="Dr Mohsin Khan"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/englishTranslationLable" />
@@ -116,6 +125,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginTop="27dp"
         android:text="Mufti Taqi Usmani"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mohsinKhanLable" />
@@ -127,6 +137,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginTop="29dp"
         android:text="No English Translation"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taqiUsmaniLable" />

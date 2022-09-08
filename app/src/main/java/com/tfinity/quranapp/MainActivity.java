@@ -1,5 +1,6 @@
 package com.tfinity.quranapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -41,16 +44,48 @@ public class MainActivity extends AppCompatActivity {
         toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Intent intent;
+                switch (item.getItemId()){
+                    case R.id.read:
+                        intent=new Intent(MainActivity.this,Read.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.fatehMuhammad:
+                        intent=new Intent(MainActivity.this,RecyclerViewActivity.class);
+                        intent.putExtra("name","fatehMuhammad");
+                        startActivity(intent);
+                        break;
+                    case R.id.mehmoodUlHassan:
+                        intent=new Intent(MainActivity.this,RecyclerViewActivity.class);
+                        intent.putExtra("name","mehmoodUlHassan");
+                        startActivity(intent);
+                        break;
+                    case R.id.drMohsin:
+                        intent=new Intent(MainActivity.this,RecyclerViewActivity.class);
+                        intent.putExtra("name","drMohsin");
+                        startActivity(intent);
+                        break;
+                    case R.id.muftiTaqi:
+                        intent=new Intent(MainActivity.this,RecyclerViewActivity.class);
+                        intent.putExtra("name","muftiTaqi");
+                        startActivity(intent);
+                        break;
+                }
+                return true;
+            }
+        });
 
-        DBHelper db=new DBHelper(MainActivity.this);
-        db.getdata();
+
         setupOnClick();
     }
     void setupOnClick(){
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,null);
+                Intent intent=new Intent(MainActivity.this,Read.class);
                 startActivity(intent);
             }
         });

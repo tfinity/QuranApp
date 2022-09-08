@@ -5,10 +5,14 @@
       <map>
         <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/activity_read.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/activity_recycler_view.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/activity_settings.xml" value="0.22393162393162394" />
         <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/header.xml" value="0.22509057971014493" />
         <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/main_menu.xml" value="0.22509057971014493" />
         <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/paralistview.xml" value="0.22509057971014493" />
+        <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/read_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/layout/recycle_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/talha/AndroidStudioProjects/QuranApp/app/src/main/res/menu/main_menu.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>

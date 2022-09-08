@@ -88,6 +88,7 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 myEdit.commit();
+                finish();
             }
         });
 
